@@ -1,0 +1,16 @@
+{
+  "name": "gamma_scanner",
+  "version": "1.0.0",
+  "description": "100% free gamma squeeze scanner. No API keys required.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.5",
+    "cheerio": "^1.2.0"
+  }
+}

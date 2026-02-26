@@ -1,0 +1,56 @@
+{
+  "version": "2.0",
+  "created": "2026-02-25",
+  "entries": [
+    {
+      "id": 1772105073197,
+      "text": "Trend analysis is critical - don't pick downtrending stocks",
+      "tags": [
+        "trading"
+      ],
+      "priority": "high",
+      "source": "self_improvement",
+      "created": "2026-02-26T11:24:33.197Z",
+      "referenced": 0
+    },
+    {
+      "id": 1772105073153,
+      "text": "Always check API rate limits - they reset daily",
+      "tags": [
+        "coding",
+        "research"
+      ],
+      "priority": "normal",
+      "source": "self_improvement",
+      "created": "2026-02-26T11:24:33.153Z",
+      "referenced": 0
+    },
+    {
+      "id": 1772105071940,
+      "text": "Gamma squeeze works best on gap down + tight consolidation stocks",
+      "tags": [
+        "trading"
+      ],
+      "priority": "normal",
+      "source": "self_improvement",
+      "created": "2026-02-26T11:24:31.940Z",
+      "referenced": 0
+    }
+  ],
+  "topic_map": {
+    "trading": [
+      1772105071940,
+      1772105073197
+    ],
+    "coding": [
+      1772105073153
+    ],
+    "research": [
+      1772105073153
+    ]
+  },
+  "priority_entries": [
+    1772105073197
+  ],
+  "categories": {}
+}
