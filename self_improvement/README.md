@@ -7,8 +7,8 @@ Three integrated systems for autonomous self-improvement.
 ### 1. Memory 2.0 (`memory2.js`)
 - Smart memory with auto-tagging
 - Priority entries (high/low)
-- Topic tracking
-- Relevance-based search
+- Cross-reference topics
+- Learning tracking
 
 ### 2. Performance Tracker (`tracker.js`)
 - Track strategy outcomes
@@ -16,11 +16,20 @@ Three integrated systems for autonomous self-improvement.
 - Performance statistics
 - Self-critique
 
-### 3. Self Analyzer (`self_analyzer.js`)
-- Code review
+### 3. Self Analyzer (`self_an Code review
+-alyzer.js`)
 - Issue detection
 - Pattern tracking
 - Recommendations
+
+### 4. Cognitive Architecture (`cognitive.js`) - NEW
+Based on CORE (Ian-Tharp) cognitive framework:
+- **Comprehension** - Understanding input, intent detection, emotional tone
+- **Orchestration** - Planning and coordinating tasks
+- **Reasoning** - Logic, patterns, deduction
+- **Evaluation** - Self-critique, learning
+- **Council of Perspectives** - Multi-agent deliberation
+- **Catalyst Engine** - Creative problem solving
 
 ## Usage
 
@@ -53,6 +62,12 @@ node self_improve.js improve
 
 # Daily summary
 node self_improve.js daily
+
+# Cognitive Architecture
+node cognitive.js process "your input"    - Process through 4 pillars
+node cognitive.js council "topic"         - Get multiple perspectives
+node cognitive.js brainstorm "problem"   - Generate creative solutions
+node cognitive.js stats                  - Show cognitive stats
 ```
 
 ## Files
@@ -61,5 +76,6 @@ node self_improve.js daily
 - `memory2.js` - Memory system
 - `tracker.js` - Performance tracker
 - `self_analyzer.js` - Code analyzer
+- `cognitive.js` - Cognitive architecture (NEW)
 - `insights.json` - Memory data
 - `performance.json` - Performance data
