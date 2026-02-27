@@ -3,6 +3,35 @@
   "created": "2026-02-25",
   "entries": [
     {
+      "id": 1772171901631,
+      "text": "Use cognitive architecture (Comprehension → Orchestration → Reasoning → Evaluation) for EVERY request",
+      "tags": [],
+      "priority": "normal",
+      "source": "self_improvement",
+      "created": "2026-02-27T05:58:21.631Z",
+      "referenced": 0
+    },
+    {
+      "id": 1772171901593,
+      "text": "Track more strategies in performance tracker - record success/failure of EVERY significant task",
+      "tags": [],
+      "priority": "normal",
+      "source": "self_improvement",
+      "created": "2026-02-27T05:58:21.593Z",
+      "referenced": 0
+    },
+    {
+      "id": 1772171901549,
+      "text": "Self-improvement must be ACTIVE, not passive - I must use my cognitive system for every interaction",
+      "tags": [
+        "technical"
+      ],
+      "priority": "normal",
+      "source": "self_improvement",
+      "created": "2026-02-27T05:58:21.549Z",
+      "referenced": 0
+    },
+    {
       "id": 1772105073197,
       "text": "Trend analysis is critical - don't pick downtrending stocks",
       "tags": [
@@ -47,6 +76,9 @@
     ],
     "research": [
       1772105073153
+    ],
+    "technical": [
+      1772171901549
     ]
   },
   "priority_entries": [
