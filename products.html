@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All Phones | Luchiano Wireless</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .catalog-header {
+            background: var(--dark);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+        .catalog-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .catalog-header p {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+        .category-filter {
+            background: var(--light);
+            padding: 20px 0;
+            position: sticky;
+            top: 70px;
+            z-index: 99;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .filter-btn {
+            padding: 10px 20px;
+            background: var(--white);
+            border: 2px solid var(--gray);
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: var(--white);
+        }
+        .category-section {
+            padding: 60px 0;
+        }
+        .category-section:nth-child(even) {
+            background: var(--light);
+        }
+        .category-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .category-title span {
+            background: var(--gradient);
+            color: var(--white);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .stock-count {
+            font-size: 0.85rem;
+            color: var(--gray);
+            font-weight: 400;
+        }
+        .bulk-badge {
+            background: var(--accent);
+            color: var(--dark);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Luchiano Wireless</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="highlight">Shop All</a></li>
+                <li><a href="index.html#africa">Africa Market</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <a href="https://wa.me/YOUR_NUMBER" class="btn btn-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> Chat Now
+            </a>
+        </div>
+    </nav>
+
+    <section class="catalog-header">
+        <div class="container">
+            <h1>📱 Full Inventory</h1>
+            <p>100+ Phones in Stock - Edison, NJ Warehouse</p>
+            <p style="margin-top: 15px;">
+                <a href="https://wa.me/YOUR_NUMBER" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <div class="category-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn" onclick="scrollToCategory('iphone15')">iPhone 15</button>
+                <button class="filter-btn" onclick="scrollToCategory('iphone14')">iPhone 14</button>
+                <button class="filter-btn" onclick="scrollToCategory('iphone13')">iPhone 13</button>
+                <button class="filter-btn" onclick="scrollToCategory('iphone12')">iPhone 12</button>
+                <button class="filter-btn" onclick="scrollToCategory('iphone11')">iPhone 11</button>
+                <button class="filter-btn" onclick="scrollToCategory('older')">Older iPhones</button>
+                <button class="filter-btn" onclick="scrollToCategory('samsung')">Samsung</button>
+                <button class="filter-btn" onclick="scrollToCategory('budget')">Budget</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- iPhone 15 Series -->
+    <section class="category-section" id="iphone15">
+        <div class="container">
+            <h2 class="category-title">
+                <i class="fas fa-mobile-alt"></i>
+                iPhone 15 Series
+                <span class="stock-count">8 models in stock</span>
+            </h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">Like New</span>
+                        <img src="https://https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=500&fit=crop" alt="iPhone 15 Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 15 Pro</h3>
+                        <p class="specs">512GB • Like New</p>
+                        <div class="product-price">
+                            <span class="price">$650</span>
+                            <span class="original">$800</span>
+                        </div>
+                        <p class="stock-status">✅ 2 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2015%20Pro%20512GB%20Like%20New%20-%20$650" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">A Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=500&fit=crop" alt="iPhone 15 Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 15 Pro</h3>
+                        <p class="specs">256GB • A Grade</p>
+                        <div class="product-price">
+                            <span class="price">$600</span>
+                            <span class="original">$750</span>
+                        </div>
+                        <p class="stock-status">✅ 1 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2015%20Pro%20256GB%20A%20-%20$600" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">AB Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=500&fit=crop" alt="iPhone 15 Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 15 Pro</h3>
+                        <p class="specs">256GB • AB Grade</p>
+                        <div class="product-price">
+                            <span class="price">$580</span>
+                            <span class="original">$720</span>
+                        </div>
+                        <p class="stock-status">✅ 1 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2015%20Pro%20256GB%20AB%20-%20$580" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">Like New</span>
+                        <img src="https://https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=500&fit=crop" alt="iPhone 15 Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 15 Pro</h3>
+                        <p class="specs">128GB • Like New</p>
+                        <div class="product-price">
+                            <span class="price">$600</span>
+                            <span class="original">$750</span>
+                        </div>
+                        <p class="stock-status">✅ 3 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2015%20Pro%20128GB%20Like%20New%20-%20$600" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">A Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=500&fit=crop" alt="iPhone 15 Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 15 Pro</h3>
+                        <p class="specs">128GB • A Grade</p>
+                        <div class="product-price">
+                            <span class="price">$575</span>
+                            <span class="original">$720</span>
+                        </div>
+                        <p class="stock-status">✅ 4 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2015%20Pro%20128GB%20A%20-%20$575" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">AB Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=500&fit=crop" alt="iPhone 15 Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 15 Pro</h3>
+                        <p class="specs">128GB • AB Grade</p>
+                        <div class="product-price">
+                            <span class="price">$550</span>
+                            <span class="original">$700</span>
+                        </div>
+                        <p class="stock-status">✅ 2 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2015%20Pro%20128GB%20AB%20-%20$550" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">Like New</span>
+                        <img src="https://https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&h=500&fit=crop" alt="iPhone 15">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 15</h3>
+                        <p class="specs">128GB • Like New</p>
+                        <div class="product-price">
+                            <span class="price">$525</span>
+                            <span class="original">$650</span>
+                        </div>
+                        <p class="stock-status">✅ 2 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2015%20128GB%20Like%20New%20-%20$525" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">A Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&h=500&fit=crop" alt="iPhone 15">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 15</h3>
+                        <p class="specs">128GB • A Grade</p>
+                        <div class="product-price">
+                            <span class="price">$500</span>
+                            <span class="original">$625</span>
+                        </div>
+                        <p class="stock-status">✅ 5 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2015%20128GB%20A%20-%20$500" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- iPhone 14 Series -->
+    <section class="category-section" id="iphone14">
+        <div class="container">
+            <h2 class="category-title">
+                <i class="fas fa-mobile-alt"></i>
+                iPhone 14 Series
+                <span class="stock-count">7 models in stock</span>
+            </h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">Like New</span>
+                        <img src="https://https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400&h=500&fit=crop" alt="iPhone 14 Pro Max">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 14 Pro Max</h3>
+                        <p class="specs">512GB • Like New</p>
+                        <div class="product-price">
+                            <span class="price">$650</span>
+                            <span class="original">$850</span>
+                        </div>
+                        <p class="stock-status">✅ 7 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2014%20Pro%20Max%20512GB%20Like%20New%20-%20$650" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">Like New</span>
+                        <img src="https://https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400&h=500&fit=crop" alt="iPhone 14 Pro Max">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 14 Pro Max</h3>
+                        <p class="specs">256GB • Like New</p>
+                        <div class="product-price">
+                            <span class="price">$625</span>
+                            <span class="original">$800</span>
+                        </div>
+                        <p class="stock-status">✅ 1 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2014%20Pro%20Max%20256GB%20Like%20New%20-%20$625" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">Like New</span>
+                        <img src="https://https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400&h=500&fit=crop" alt="iPhone 14 Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 14 Pro</h3>
+                        <p class="specs">256GB • Like New</p>
+                        <div class="product-price">
+                            <span class="price">$525</span>
+                            <span class="original">$700</span>
+                        </div>
+                        <p class="stock-status">✅ 7 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2014%20Pro%20256GB%20Like%20New%20-%20$525" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">Like New</span>
+                        <img src="https://https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400&h=500&fit=crop" alt="iPhone 14 Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 14 Pro</h3>
+                        <p class="specs">128GB • Like New</p>
+                        <div class="product-price">
+                            <span class="price">$500</span>
+                            <span class="original">$675</span>
+                        </div>
+                        <p class="stock-status">✅ 26 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2014%20Pro%20128GB%20Like%20New%20-%20$500" class="btn btn-small">Bulk Available</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">A Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400&h=500&fit=crop" alt="iPhone 14 Plus">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 14 Plus</h3>
+                        <p class="specs">256GB • A Grade</p>
+                        <div class="product-price">
+                            <span class="price">$450</span>
+                            <span class="original">$600</span>
+                        </div>
+                        <p class="stock-status">✅ 1 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2014%20Plus%20256GB%20A%20-%20$450" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">AB Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400&h=500&fit=crop" alt="iPhone 14 Plus">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 14 Plus</h3>
+                        <p class="specs">256GB • AB Grade</p>
+                        <div class="product-price">
+                            <span class="price">$425</span>
+                            <span class="original">$575</span>
+                        </div>
+                        <p class="stock-status">✅ 2 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2014%20Plus%20256GB%20AB%20-%20$425" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- iPhone 13 Series -->
+    <section class="category-section" id="iphone13">
+        <div class="container">
+            <h2 class="category-title">
+                <i class="fas fa-mobile-alt"></i>
+                iPhone 13 Series
+                <span class="stock-count">10 models in stock</span>
+            </h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">Like New</span>
+                        <img src="https://https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=400&h=500&fit=crop" alt="iPhone 13 Pro Max">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 13 Pro Max</h3>
+                        <p class="specs">256GB • Like New</p>
+                        <div class="product-price">
+                            <span class="price">$575</span>
+                            <span class="original">$750</span>
+                        </div>
+                        <p class="stock-status">✅ 1 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2013%20Pro%20Max%20256GB%20Like%20New%20-%20$575" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">AB Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=400&h=500&fit=crop" alt="iPhone 13 Pro Max">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 13 Pro Max</h3>
+                        <p class="specs">256GB • AB Grade</p>
+                        <div class="product-price">
+                            <span class="price">$525</span>
+                            <span class="original">$700</span>
+                        </div>
+                        <p class="stock-status">✅ 1 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2013%20Pro%20Max%20256GB%20AB%20-%20$525" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">AF Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=400&h=500&fit=crop" alt="iPhone 13 Pro Max">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 13 Pro Max</h3>
+                        <p class="specs">128GB • AF Grade</p>
+                        <div class="product-price">
+                            <span class="price">$500</span>
+                            <span class="original">$675</span>
+                        </div>
+                        <p class="stock-status">✅ 1 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2013%20Pro%20Max%20128GB%20AF%20-%20$500" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge budget">C Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=400&h=500&fit=crop" alt="iPhone 13 Pro Max">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 13 Pro Max</h3>
+                        <p class="specs">128GB • C Grade</p>
+                        <div class="product-price">
+                            <span class="price">$475</span>
+                            <span class="original">$650</span>
+                        </div>
+                        <p class="stock-status">✅ 4 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2013%20Pro%20Max%20128GB%20C%20-%20$475" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">A Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=400&h=500&fit=crop" alt="iPhone 13 Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 13 Pro</h3>
+                        <p class="specs">512GB • A Grade</p>
+                        <div class="product-price">
+                            <span class="price">$500</span>
+                            <span class="original">$675</span>
+                        </div>
+                        <p class="stock-status">✅ 1 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2013%20Pro%20512GB%20A%20-%20$500" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">AB Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=400&h=500&fit=crop" alt="iPhone 13 Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 13 Pro</h3>
+                        <p class="specs">512GB • AB Grade</p>
+                        <div class="product-price">
+                            <span class="price">$475</span>
+                            <span class="original">$650</span>
+                        </div>
+                        <p class="stock-status">✅ 1 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2013%20Pro%20512GB%20AB%20-%20$475" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">AB Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=400&h=500&fit=crop" alt="iPhone 13 Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 13 Pro</h3>
+                        <p class="specs">256GB • AB Grade</p>
+                        <div class="product-price">
+                            <span class="price">$450</span>
+                            <span class="original">$625</span>
+                        </div>
+                        <p class="stock-status">✅ 4 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2013%20Pro%20256GB%20AB%20-%20$450" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">A Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=400&h=500&fit=crop" alt="iPhone 13">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 13</h3>
+                        <p class="specs">256GB • A Grade</p>
+                        <div class="product-price">
+                            <span class="price">$400</span>
+                            <span class="original">$550</span>
+                        </div>
+                        <p class="stock-status">✅ 1 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2013%20256GB%20A%20-%20$400" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="condition-badge clean">AB Grade</span>
+                        <img src="https://https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=400&h=500&fit=crop" alt="iPhone 13">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 13</h3>
+                        <p class="specs">256GB • AB Grade</p>
+                        <div class="product-price">
+                            <span class="price">$375</span>
+                            <span class="original">$525</span>
+                        </div>
+                        <p class="stock-status">✅ 1 in stock</p>
+                        <a href="https://wa.me/YOUR_NUMBER?text=Order%20iPhone%2013%20256GB%20AB%20-%20$375" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="text-center" style="padding: 60px 0; background: var(--dark); color: var(--white);">
+        <h2 style="margin-bottom: 20px;">Want to See More?</h2>
+        <p style="margin-bottom: 30px; color: var(--gray);">We have 80+ more phones in stock including iPhone 12, 11, XR, XS, Samsung, and budget options.</p>
+        <a href="https://wa.me/YOUR_NUMBER?text=Send%20me%20full%20inventory%20list" class="btn btn-primary btn-large">
+            <i class="fab fa-whatsapp"></i> Get Full Inventory on WhatsApp
+        </a>
+    </div>
+
+    <footer class="footer" style="background: var(--dark); color: var(--white); padding: 40px 0; text-align: center;">
+        <div class="container">
+            <p>&copy; 2024 Luchiano Wireless. All rights reserved.</p>
+            <p style="color: var(--gray); margin-top: 10px;">Prices subject to change. Stock updated daily.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToCategory(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
